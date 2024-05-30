@@ -7,17 +7,18 @@
 
 import Foundation
 
-struct ListItem: Identifiable, Codable {
-    var id: Int?
+struct ListItem: Identifiable {
+    let id = UUID()
     var title: String
     var done:  Bool
 }
 
-let firstItem = ListItem(title: "Underwear, (3-5 pairs)", done: false)
+let firstItem = ListItem (title: "Underwear, (3-5 pairs)", done: false)
 
-let secondItem = ListItem(title: "Socks, (3-5 pairs)", done: true)
+let secondItem = ListItem (title: "Socks, (3-5 pairs)", done: true)
+ 
+let thirdItem = ListItem (title: "Sleepwear, (3-5 pairs)", done: false)
 
-let thirdItem = ListItem(title: "Sleepwear, (3-5 pairs)", done: false)
 
 let exampleItems = [
     

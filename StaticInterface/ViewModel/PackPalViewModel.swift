@@ -6,8 +6,5 @@
 //
 
 import Foundation
-
-var item: 
-
-var fetchingTodos: Bool = false
+    
 
