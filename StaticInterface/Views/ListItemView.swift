@@ -43,5 +43,35 @@ struct ListItemView: View {
 }
 
 #Preview {
-    ListItemView()
+    TabView(selection: .constant(1)){
+        
+       ListItemView()
+                .tabItem {
+                    Image(systemName: "tshirt.fill")
+                    Text("Clothings")
+                  }
+                  .tag(1)
+        
+        Text("Toiletries")
+                  .tabItem {
+                      Image(systemName: "toilet.fill")
+                      Text("Toiletries")
+                  }
+                  .tag(2)
+    
+        Text("Health")
+                  .tabItem {
+                      Image(systemName: "bandage.fill")
+                      Text("Health")
+                  }
+                  .tag(3)
+        
+        Text("Electronics")
+                  .tabItem {
+                      Image(systemName: "iphone.gen1")
+                      Text("Electronics")
+                  }
+                  .tag(4)
+              
+    }
 }
