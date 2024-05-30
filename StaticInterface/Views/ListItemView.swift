@@ -14,7 +14,31 @@ struct ListItemView: View {
     @State var searchText = ""
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        NavigationView{
+            
+            VStack{
+                
+                List{
+                    ItemView(currentItem: firstItem)
+                    ItemView(currentItem: secondItem)
+                    ItemView(currentItem: thirdItem)
+                }
+                .searchable(text: $searchText)
+                
+                HStack{
+                    TextField("Enter new item", text:
+                                $newItemDescription)
+                    
+                    Button("ADD") {
+                        
+                    }
+                    .font(.caption)
+                }
+                .padding(20)
+                .navigationTitle("Daily Needs")
+            }
+        }
     }
 }
 
