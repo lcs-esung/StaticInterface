@@ -1,5 +1,5 @@
 //
-//  ClothingsView.swift
+//  ElectronicsView.swift
 //  StaticInterface
 //
 //  Created by Edna Sung on 2024-05-31.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ClothingsView: View {
+struct ElectronicsView: View {
     
     @State var searchText = ""
     
@@ -18,9 +18,9 @@ struct ClothingsView: View {
             VStack{
                 
                 List{
-                    ItemView(currentItem: firstCItem)
-                    ItemView(currentItem: secondCItem)
-                    ItemView(currentItem: thirdCItem)
+                    ItemView(currentItem: firstEItem)
+                    ItemView(currentItem: secondEItem)
+                    ItemView(currentItem: thirdEItem)
                 }
                 .searchable(text: $searchText)
                 .navigationTitle("Daily Needs")
@@ -41,10 +41,10 @@ struct ClothingsView: View {
         
                 }
             }
-        }   
+        }
     }
 }
 
 #Preview {
-    ClothingsView()
+    ElectronicsView()
 }

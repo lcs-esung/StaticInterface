@@ -12,14 +12,15 @@ struct ToiletriesView: View {
     @State var searchText = ""
     
     var body: some View {
+        
         NavigationView{
             
             VStack{
                 
                 List{
-                    ItemView(currentItem: firstItem)
-                    ItemView(currentItem: secondItem)
-                    ItemView(currentItem: thirdItem)
+                    ItemView(currentItem: firstTItem)
+                    ItemView(currentItem: secondTItem)
+                    ItemView(currentItem: thirdTItem)
                 }
                 .searchable(text: $searchText)
                 .navigationTitle("Daily Needs")

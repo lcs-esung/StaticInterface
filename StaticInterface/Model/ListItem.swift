@@ -13,20 +13,39 @@ struct ListItem: Identifiable {
     var done:  Bool
 }
 
-//let firstItem = ListItem (title: "Underwear, (3-5 pairs)", done: false)
-//
-//let secondItem = ListItem (title: "Socks, (3-5 pairs)", done: true)
-// 
-//let thirdItem = ListItem (title: "Sleepwear, (3-5 pairs)", done: false)
-//
-//
-//let exampleItems = [
-//    
-//    firstItem
-//    ,
-//    secondItem
-//    ,
-//    thirdItem
-//    ,
-//    
-//]
+let firstCItem = ListItem (title: "Underwear, (3-5 pairs)", done: false)
+
+let secondCItem = ListItem (title: "Socks, (3-5 pairs)", done: true)
+ 
+let thirdCItem = ListItem (title: "Sleepwear, (3-5 pairs)", done: false)
+
+let firstTItem = ListItem (title: "Toothbrush & Toothpaste", done: false)
+
+let secondTItem = ListItem (title: "Shampoo & Conditioner", done: true)
+ 
+let thirdTItem = ListItem (title: "Body Wash", done: false)
+
+let firstHItem = ListItem (title: "Personal Medicine", done: false)
+
+let secondHItem = ListItem (title: "Pain Reliever", done: false)
+ 
+let thirdHItem = ListItem (title: "Hand Sanitiser", done: false)
+
+let firstEItem = ListItem (title: "Charger", done: false)
+
+let secondEItem = ListItem (title: "Power Bank", done: false)
+ 
+let thirdEItem = ListItem (title: "Headphones/Earbuds", done: false)
+
+
+
+let exampleItems = [
+    
+    firstCItem
+    ,
+    secondCItem
+    ,
+    thirdCItem
+    ,
+    
+]

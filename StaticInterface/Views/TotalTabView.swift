@@ -19,19 +19,19 @@ struct TotalTabView: View {
                       }
                       .tag(1)
             
-            Text("Toiletries")
+            ToiletriesView()
                       .tabItem {
                           Label("Toiletries", systemImage: "toilet.fill")
                       }
                       .tag(2)
         
-            Text("Health")
+            HealthView()
                       .tabItem {
                           Label("Health", systemImage: "bandage.fill")
                       }
                       .tag(3)
             
-            Text("Electronics")
+            ElectronicsView()
                       .tabItem {
                           Label("Electronics", systemImage: "iphone.gen1")
                       }
