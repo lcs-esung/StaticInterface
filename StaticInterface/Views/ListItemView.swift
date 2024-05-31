@@ -25,18 +25,23 @@ struct ListItemView: View {
                     ItemView(currentItem: thirdItem)
                 }
                 .searchable(text: $searchText)
-                
-                HStack{
-                    TextField("Enter new item", text:
-                                $newItemDescription)
-                    
-                    Button("ADD") {
-                        
-                    }
-                    .font(.caption)
-                }
-                .padding(20)
                 .navigationTitle("Daily Needs")
+                .toolbar{
+                    ToolbarItem(placement: .topBarTrailing) {
+                        Button(action: {}) {
+                            Image(systemName: "plus")
+                            Text("Edit")
+            }
+        }
+                    ToolbarItem(placement: .topBarLeading) {
+                        Button(action: {}) {
+                            Image(systemName: "arrow.left")
+                            Text("Back")
+            }
+        }
+        
+        
+                }
             }
         }
     }
