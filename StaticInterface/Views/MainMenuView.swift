@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MainMenuView: View {
     
-    let gradientColor = Gradient(colors: [.lightBlue, .lightGray])
+    let gradientColor = Gradient(colors: [.lightBlue, .lightGrey])
 
     var body: some View {
         
@@ -24,7 +24,7 @@ struct MainMenuView: View {
         Rectangle()
             .foregroundStyle(gradient2)
             .cornerRadius(6)
-            .frame(width: 210,height: 210)
+            .frame(width: 210, height: 110)
         
     }
     
