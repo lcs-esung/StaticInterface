@@ -8,9 +8,28 @@
 import SwiftUI
 
 struct MainMenuView: View {
+    
+    let gradientColor = Gradient(colors: [.lightBlue, .lightGray])
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        let lightGray = Color(
+                   hue: 0/360.0,
+                   saturation: 0.0,
+                   brightness: 0.93
+               )
+        
+        let gradient2 = LinearGradient(gradient: gradientColor, startPoint: UnitPoint(x: 1, y: 0.5), endPoint: UnitPoint(x: 1, y: 1))
+        
+        Rectangle()
+            .foregroundStyle(gradient2)
+            .cornerRadius(6)
+            .frame(width: 210,height: 210)
+        
     }
+    
+  
+    
 }
 
 #Preview {
