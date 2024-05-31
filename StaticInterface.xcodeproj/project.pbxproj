@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A8F903D2C08D44E00DA8BDA /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8F903C2C08D44E00DA8BDA /* ListItemView.swift */; };
 		2A8F903F2C08D49B00DA8BDA /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8F903E2C08D49B00DA8BDA /* ItemView.swift */; };
+		2ABD89A82C0A4AD700CB2AC4 /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABD89A72C0A4AD700CB2AC4 /* MainMenuView.swift */; };
+		2ABD89AA2C0A4CF400CB2AC4 /* ClothingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABD89A92C0A4CF400CB2AC4 /* ClothingsView.swift */; };
+		2ABD89AC2C0A4E4700CB2AC4 /* TotalTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABD89AB2C0A4E4700CB2AC4 /* TotalTabView.swift */; };
+		2ABD89AE2C0A4F3D00CB2AC4 /* ToiletriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABD89AD2C0A4F3D00CB2AC4 /* ToiletriesView.swift */; };
 		2ACCCF0A2C076BEE00998D04 /* StaticInterfaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACCCF092C076BEE00998D04 /* StaticInterfaceApp.swift */; };
 		2ACCCF0E2C076BF000998D04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ACCCF0D2C076BF000998D04 /* Assets.xcassets */; };
 		2ACCCF112C076BF000998D04 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ACCCF102C076BF000998D04 /* Preview Assets.xcassets */; };
@@ -17,8 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2A8F903C2C08D44E00DA8BDA /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
 		2A8F903E2C08D49B00DA8BDA /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		2ABD89A72C0A4AD700CB2AC4 /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
+		2ABD89A92C0A4CF400CB2AC4 /* ClothingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingsView.swift; sourceTree = "<group>"; };
+		2ABD89AB2C0A4E4700CB2AC4 /* TotalTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalTabView.swift; sourceTree = "<group>"; };
+		2ABD89AD2C0A4F3D00CB2AC4 /* ToiletriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletriesView.swift; sourceTree = "<group>"; };
 		2ACCCF062C076BEE00998D04 /* StaticInterface.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StaticInterface.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ACCCF092C076BEE00998D04 /* StaticInterfaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticInterfaceApp.swift; sourceTree = "<group>"; };
 		2ACCCF0D2C076BF000998D04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -86,7 +92,10 @@
 		2ACCCF182C076D2300998D04 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				2A8F903C2C08D44E00DA8BDA /* ListItemView.swift */,
+				2ABD89A72C0A4AD700CB2AC4 /* MainMenuView.swift */,
+				2ABD89AB2C0A4E4700CB2AC4 /* TotalTabView.swift */,
+				2ABD89A92C0A4CF400CB2AC4 /* ClothingsView.swift */,
+				2ABD89AD2C0A4F3D00CB2AC4 /* ToiletriesView.swift */,
 				2A8F903E2C08D49B00DA8BDA /* ItemView.swift */,
 			);
 			path = Views;
@@ -178,11 +187,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ABD89A82C0A4AD700CB2AC4 /* MainMenuView.swift in Sources */,
+				2ABD89AA2C0A4CF400CB2AC4 /* ClothingsView.swift in Sources */,
 				2ACCCF292C07777A00998D04 /* ListItem.swift in Sources */,
+				2ABD89AC2C0A4E4700CB2AC4 /* TotalTabView.swift in Sources */,
 				2ACCCF212C0776FA00998D04 /* PackPalViewModel.swift in Sources */,
 				2ACCCF0A2C076BEE00998D04 /* StaticInterfaceApp.swift in Sources */,
+				2ABD89AE2C0A4F3D00CB2AC4 /* ToiletriesView.swift in Sources */,
 				2A8F903F2C08D49B00DA8BDA /* ItemView.swift in Sources */,
-				2A8F903D2C08D44E00DA8BDA /* ListItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
