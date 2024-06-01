@@ -19,6 +19,7 @@
 		2ACCCF112C076BF000998D04 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ACCCF102C076BF000998D04 /* Preview Assets.xcassets */; };
 		2ACCCF212C0776FA00998D04 /* PackPalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACCCF202C0776FA00998D04 /* PackPalViewModel.swift */; };
 		2ACCCF292C07777A00998D04 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACCCF282C07777A00998D04 /* ListItem.swift */; };
+		2ADE98CB2C0BBDC6001FF49B /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADE98CA2C0BBDC6001FF49B /* TitleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		2ACCCF102C076BF000998D04 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2ACCCF202C0776FA00998D04 /* PackPalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackPalViewModel.swift; sourceTree = "<group>"; };
 		2ACCCF282C07777A00998D04 /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		2ADE98CA2C0BBDC6001FF49B /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				2ABD89A72C0A4AD700CB2AC4 /* MainMenuView.swift */,
+				2ADE98CA2C0BBDC6001FF49B /* TitleView.swift */,
 				2A8F903E2C08D49B00DA8BDA /* ItemView.swift */,
 				2ABD89B52C0A546A00CB2AC4 /* Daily Needs File */,
 			);
@@ -209,6 +212,7 @@
 				2ACCCF212C0776FA00998D04 /* PackPalViewModel.swift in Sources */,
 				2ACCCF0A2C076BEE00998D04 /* StaticInterfaceApp.swift in Sources */,
 				2ABD89B02C0A52B700CB2AC4 /* HealthView.swift in Sources */,
+				2ADE98CB2C0BBDC6001FF49B /* TitleView.swift in Sources */,
 				2ABD89AE2C0A4F3D00CB2AC4 /* ToiletriesView.swift in Sources */,
 				2A8F903F2C08D49B00DA8BDA /* ItemView.swift in Sources */,
 			);
