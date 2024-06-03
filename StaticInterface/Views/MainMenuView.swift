@@ -30,19 +30,61 @@ struct MainMenuView: View {
             VStack {
                 
                 Spacer()
+                    .padding()
                 
                 TitleView()
                 
+                HStack {
+                    Image("longShirt")
+                        .resizable()
+                        .scaledToFit()
+                        .foregroundColor(.darkBlue)
+                        .frame(height: 150)
+                        .padding(.trailing, 140)
+                
+                }
+                
+                HStack {
+                    Image("toothbrush")
+                        .resizable()
+                        .scaledToFit()
+                        .foregroundColor(.darkBlue)
+                        .frame(height: 120)
+                        .padding(.leading, 100)
+                }
+                
+                HStack {
+                    Image("pants")
+                        .resizable()
+                        .scaledToFit()
+                        .foregroundColor(.darkBlue)
+                        .frame(height: 150)
+                        .padding(.trailing, 140)
+               
+                    
+                    Spacer()
+                    
+                       
+                }
+               
                 Spacer()
+                    .padding()
+              
                 
-                Image(systemName: "tshirt.fill")
-                    .foregroundColor(.white)
+                ZStack {
+                    Rectangle()
+                        .foregroundStyle(.darkBlue)
+                        .frame(width: 150)
+                        .cornerRadius(120)
+                    
+                    Text("Get Started")
+                        .foregroundColor(.white)
+                    
+                }
                 
-                Image(systemName: "tshirt.fill")
-                    .foregroundColor(.white)
+                Spacer()
+                    .padding()
                 
-                Image(systemName: "tshirt.fill")
-                    .foregroundColor(.white)
             }
                 
             
