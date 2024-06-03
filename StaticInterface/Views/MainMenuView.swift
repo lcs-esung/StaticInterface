@@ -21,24 +21,35 @@ struct MainMenuView: View {
         
         let gradient2 = LinearGradient(gradient: gradientColor, startPoint: UnitPoint(x: 1, y: 0.5), endPoint: UnitPoint(x: 1, y: 1))
         
-        VStack {
+        ZStack{
             
-            Image(systemName: "tshirt.fill")
-                .foregroundColor(.white)
-            
-            Image(systemName: "tshirt.fill")
-                .foregroundColor(.white)
-            
-            Image(systemName: "tshirt.fill")
-                .foregroundColor(.white)
-             
             Rectangle()
-                .cornerRadius(6)
+                .foregroundStyle(gradient2)
+                .ignoresSafeArea()
             
-    
+            VStack {
+                
+                Spacer()
+                
+                TitleView()
+                
+                Spacer()
+                
+                Image(systemName: "tshirt.fill")
+                    .foregroundColor(.white)
+                
+                Image(systemName: "tshirt.fill")
+                    .foregroundColor(.white)
+                
+                Image(systemName: "tshirt.fill")
+                    .foregroundColor(.white)
+            }
+                
+            
+            
+            }
         }
-        
-    }
+       
     
   
     
