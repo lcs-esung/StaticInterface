@@ -40,7 +40,9 @@ struct MainMenuView: View {
                         .scaledToFit()
                         .foregroundColor(.darkBlue)
                         .frame(height: 150)
-                        .padding(.trailing, 140)
+                        .padding(.leading, 30)
+                    
+                    Spacer()
                 
                 }
                 
@@ -59,7 +61,8 @@ struct MainMenuView: View {
                         .scaledToFit()
                         .foregroundColor(.darkBlue)
                         .frame(height: 150)
-                        .padding(.trailing, 140)
+                        .padding(.leading, 30)
+            
                
                     
                     Spacer()
