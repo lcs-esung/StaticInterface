@@ -24,6 +24,8 @@ struct ChoiceButtonView: View {
             VStack {
                 Text(title)
                     .font(Font.custom("Arial", size: 23))
+                    .multilineTextAlignment(.center)
+                    .padding()
                     
                 
                picture
