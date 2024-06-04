@@ -27,6 +27,19 @@ struct ChoicesView: View {
                 .foregroundStyle(gradient2)
                 .ignoresSafeArea()
             
+            VStack{
+                
+                TitleView()
+                
+                HStack{
+                    
+                    ChoiceButtonView(title: "In the Country", picture: Image(systemName: "flag.fill"))
+                    
+                    ChoiceButtonView(title: "Outside the Country", picture: Image(systemName: "airplane.departure"))
+                    
+                }
+            }
+            
         }
         
     }

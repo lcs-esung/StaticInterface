@@ -16,6 +16,7 @@
 		2ABD89B22C0A52C300CB2AC4 /* ElectronicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABD89B12C0A52C300CB2AC4 /* ElectronicsView.swift */; };
 		2ABF456E2C0E8FBE006F419A /* ChoiceButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABF456D2C0E8FBE006F419A /* ChoiceButtonView.swift */; };
 		2ABF45722C0E9531006F419A /* ChoicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABF45712C0E9531006F419A /* ChoicesView.swift */; };
+		2ABF45742C0E982B006F419A /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABF45732C0E982B006F419A /* QuestionView.swift */; };
 		2ACCCF0A2C076BEE00998D04 /* StaticInterfaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACCCF092C076BEE00998D04 /* StaticInterfaceApp.swift */; };
 		2ACCCF0E2C076BF000998D04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ACCCF0D2C076BF000998D04 /* Assets.xcassets */; };
 		2ACCCF112C076BF000998D04 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ACCCF102C076BF000998D04 /* Preview Assets.xcassets */; };
@@ -34,6 +35,7 @@
 		2ABD89B12C0A52C300CB2AC4 /* ElectronicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectronicsView.swift; sourceTree = "<group>"; };
 		2ABF456D2C0E8FBE006F419A /* ChoiceButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceButtonView.swift; sourceTree = "<group>"; };
 		2ABF45712C0E9531006F419A /* ChoicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoicesView.swift; sourceTree = "<group>"; };
+		2ABF45732C0E982B006F419A /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		2ACCCF062C076BEE00998D04 /* StaticInterface.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StaticInterface.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ACCCF092C076BEE00998D04 /* StaticInterfaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticInterfaceApp.swift; sourceTree = "<group>"; };
 		2ACCCF0D2C076BF000998D04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			children = (
 				2ABF456D2C0E8FBE006F419A /* ChoiceButtonView.swift */,
 				2ABF45712C0E9531006F419A /* ChoicesView.swift */,
+				2ABF45732C0E982B006F419A /* QuestionView.swift */,
 			);
 			path = "Choices ";
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 				2ACCCF0A2C076BEE00998D04 /* StaticInterfaceApp.swift in Sources */,
 				2ABD89B02C0A52B700CB2AC4 /* HealthView.swift in Sources */,
 				2ADE98CB2C0BBDC6001FF49B /* TitleView.swift in Sources */,
+				2ABF45742C0E982B006F419A /* QuestionView.swift in Sources */,
 				2ABD89AE2C0A4F3D00CB2AC4 /* ToiletriesView.swift in Sources */,
 				2ABF45722C0E9531006F419A /* ChoicesView.swift in Sources */,
 				2A8F903F2C08D49B00DA8BDA /* ItemView.swift in Sources */,
