@@ -15,12 +15,14 @@ struct QuestionView: View {
         
         Text(question)
             .foregroundColor(.white)
-            .font(Font.custom("Arial-BoldMT", size: 27))
+            .multilineTextAlignment(.center)
+            .font(Font.custom("Arial-BoldMT", size: 24))
+            .padding()
         
         
     }
 }
 
 #Preview {
-    QuestionView(question: "Where are you going?")
+    QuestionView(question: "Are you heading out of your country or travelling inside your country?")
 }

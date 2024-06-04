@@ -31,8 +31,10 @@ struct ChoicesView: View {
                 
                 TitleView()
                 
+                QuestionView(question: "Are you heading out of your country or travelling inside your country?")
+                    .padding()
+                
                 HStack{
-                    
                     ChoiceButtonView(title: "In the Country", picture: Image(systemName: "flag.fill"))
                     
                     ChoiceButtonView(title: "Outside the Country", picture: Image(systemName: "airplane.departure"))

@@ -16,10 +16,10 @@ struct ChoiceButtonView: View {
         ZStack{
             Rectangle()
                 .foregroundColor(.lightGrey)
+                .aspectRatio(contentMode: .fit)
                 .frame(height: 170)
                 .cornerRadius(30)
-                .padding(.all, 113)
-              
+                
             
             VStack {
                 Text(title)
