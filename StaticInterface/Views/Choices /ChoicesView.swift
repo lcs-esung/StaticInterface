@@ -27,19 +27,27 @@ struct ChoicesView: View {
                 .foregroundStyle(gradient2)
                 .ignoresSafeArea()
             
+            
+            
             VStack{
+                
+                BackView()
+                
+                Spacer()
                 
                 TitleView()
                 
-                QuestionView(question: "Are you heading out of your country or travelling inside your country?")
-                    .padding()
+              
                 
+                QuestionView(question: "Are you heading out of your country or travelling inside your country?")
+                    
                 HStack{
                     ChoiceButtonView(title: "In the Country", picture: Image(systemName: "flag.fill"))
                     
                     ChoiceButtonView(title: "Outside the Country", picture: Image(systemName: "airplane.departure"))
-                    
-                }
+                    }
+                
+                Spacer()
             }
             
         }
