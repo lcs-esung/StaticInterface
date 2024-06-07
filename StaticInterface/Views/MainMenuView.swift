@@ -13,7 +13,7 @@ struct MainMenuView: View {
 
     var body: some View {
         
-        let lightGray = Color(
+        let lightGrey = Color(
                    hue: 0/360.0,
                    saturation: 0.0,
                    brightness: 0.93
