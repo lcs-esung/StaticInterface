@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2A8F903F2C08D49B00DA8BDA /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8F903E2C08D49B00DA8BDA /* ItemView.swift */; };
 		2ABC53F72C0F528F00B974D5 /* BackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABC53F62C0F528F00B974D5 /* BackView.swift */; };
+		2ABC53F92C0F559700B974D5 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABC53F82C0F559700B974D5 /* WeatherView.swift */; };
 		2ABD89A82C0A4AD700CB2AC4 /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABD89A72C0A4AD700CB2AC4 /* MainMenuView.swift */; };
 		2ABD89AA2C0A4CF400CB2AC4 /* ClothingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABD89A92C0A4CF400CB2AC4 /* ClothingsView.swift */; };
 		2ABD89AC2C0A4E4700CB2AC4 /* TotalTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABD89AB2C0A4E4700CB2AC4 /* TotalTabView.swift */; };
@@ -29,6 +30,7 @@
 /* Begin PBXFileReference section */
 		2A8F903E2C08D49B00DA8BDA /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
 		2ABC53F62C0F528F00B974D5 /* BackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackView.swift; sourceTree = "<group>"; };
+		2ABC53F82C0F559700B974D5 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 		2ABD89A72C0A4AD700CB2AC4 /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
 		2ABD89A92C0A4CF400CB2AC4 /* ClothingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingsView.swift; sourceTree = "<group>"; };
 		2ABD89AB2C0A4E4700CB2AC4 /* TotalTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalTabView.swift; sourceTree = "<group>"; };
@@ -73,9 +75,10 @@
 		2ABF456C2C0E8FA3006F419A /* Choices  */ = {
 			isa = PBXGroup;
 			children = (
-				2ABF456D2C0E8FBE006F419A /* ChoiceButtonView.swift */,
 				2ABF45712C0E9531006F419A /* ChoicesView.swift */,
+				2ABF456D2C0E8FBE006F419A /* ChoiceButtonView.swift */,
 				2ABF45732C0E982B006F419A /* QuestionView.swift */,
+				2ABC53F82C0F559700B974D5 /* WeatherView.swift */,
 			);
 			path = "Choices ";
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				2ACCCF292C07777A00998D04 /* ListItem.swift in Sources */,
 				2ABD89AC2C0A4E4700CB2AC4 /* TotalTabView.swift in Sources */,
 				2ACCCF212C0776FA00998D04 /* PackPalViewModel.swift in Sources */,
+				2ABC53F92C0F559700B974D5 /* WeatherView.swift in Sources */,
 				2ACCCF0A2C076BEE00998D04 /* StaticInterfaceApp.swift in Sources */,
 				2ABD89B02C0A52B700CB2AC4 /* HealthView.swift in Sources */,
 				2ADE98CB2C0BBDC6001FF49B /* TitleView.swift in Sources */,

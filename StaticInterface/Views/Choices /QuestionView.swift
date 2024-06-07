@@ -24,5 +24,5 @@ struct QuestionView: View {
 }
 
 #Preview {
-    QuestionView(question: "Are you heading out of your country or travelling inside your country?")
+    QuestionView(question: "hi")
 }

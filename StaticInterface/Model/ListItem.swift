@@ -37,8 +37,6 @@ let secondEItem = ListItem (title: "Power Bank", done: false)
  
 let thirdEItem = ListItem (title: "Headphones/Earbuds", done: false)
 
-
-
 let exampleItems = [
     
     firstCItem
