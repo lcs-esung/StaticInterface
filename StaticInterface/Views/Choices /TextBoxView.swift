@@ -9,13 +9,16 @@ import SwiftUI
 
 struct TextBoxView: View {
     
+    let textFieldAnswer :String
+    
     @State private var weather = ""
-   
     
     var body: some View {
+        
+        
                     
             VStack{
-                TextField("Enter weather range here", text: $weather)
+                TextField(textFieldAnswer, text: $weather)
                     .font(Font.system(size: 24))
                     .background(.white)
                     .cornerRadius(3.0)
@@ -49,5 +52,5 @@ struct TextBoxView: View {
 
 
 #Preview {
-    TextBoxView()
+    TextBoxView(textFieldAnswer: "Enter weather range here")
 }
