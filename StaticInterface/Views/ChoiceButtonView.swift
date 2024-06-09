@@ -15,7 +15,7 @@ struct ChoiceButtonView: View {
         
         ZStack{
             Rectangle()
-                .foregroundColor(.lightGrey)
+                .foregroundColor(.slightGrey)
                 .aspectRatio(contentMode: .fit)
                 .frame(height: 170)
                 .cornerRadius(30)
