@@ -64,12 +64,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2ABD89B52C0A546A00CB2AC4 /* Daily Needs File */ = {
+		2A940BD62C163859004A133B /* Packing List */ = {
 			isa = PBXGroup;
 			children = (
-				2A7308412C162ADC00AEFAB9 /* PackingListView.swift */,
 			);
-			path = "Daily Needs File";
+			path = "Packing List";
 			sourceTree = "<group>";
 		};
 		2ABF456C2C0E8FA3006F419A /* Choices  */ = {
@@ -85,6 +84,8 @@
 				2ABF456D2C0E8FBE006F419A /* ChoiceButtonView.swift */,
 				2ABF45732C0E982B006F419A /* QuestionView.swift */,
 				2A20E53C2C138CC200E77CF3 /* TextBoxView.swift */,
+				2A940BD62C163859004A133B /* Packing List */,
+				2A7308412C162ADC00AEFAB9 /* PackingListView.swift */,
 			);
 			path = "Choices ";
 			sourceTree = "<group>";
@@ -142,7 +143,6 @@
 				2A8F903E2C08D49B00DA8BDA /* ItemView.swift */,
 				2ABC53F62C0F528F00B974D5 /* BackView.swift */,
 				2ABF456C2C0E8FA3006F419A /* Choices  */,
-				2ABD89B52C0A546A00CB2AC4 /* Daily Needs File */,
 			);
 			path = Views;
 			sourceTree = "<group>";
