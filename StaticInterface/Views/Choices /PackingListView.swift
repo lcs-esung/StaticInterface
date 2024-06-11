@@ -18,9 +18,9 @@ struct PackingListView: View {
             VStack{
                 
                 List{
-                    ItemView(currentItem: firstCItem)
-                    ItemView(currentItem: secondCItem)
-                    ItemView(currentItem: thirdCItem)
+                    ItemView(currentItem: firstItem)
+                    ItemView(currentItem: secondItem)
+                    ItemView(currentItem: thirdItem)
                 }
                 .searchable(text: $searchText)
                 .navigationTitle("Packing List")

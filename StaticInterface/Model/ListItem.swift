@@ -13,19 +13,19 @@ struct ListItem: Identifiable {
     var done:  Bool
 }
 
-let firstCItem = ListItem (title: "Underwear, (3-5 pairs)", done: false)
+let firstItem = ListItem (title: "Underwear, (3-5 pairs)", done: false)
 
-let secondCItem = ListItem (title: "Socks, (3-5 pairs)", done: true)
+let secondItem = ListItem (title: "Socks, (3-5 pairs)", done: true)
  
-let thirdCItem = ListItem (title: "Sleepwear, (3-5 pairs)", done: false)
+let thirdItem = ListItem (title: "Sleepwear, (3-5 pairs)", done: false)
 
 let exampleItems = [
     
-    firstCItem
+    firstItem
     ,
-    secondCItem
+    secondItem
     ,
-    thirdCItem
+    thirdItem
     ,
     
 ]
