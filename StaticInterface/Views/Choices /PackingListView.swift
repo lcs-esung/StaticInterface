@@ -11,16 +11,17 @@ struct PackingListView: View {
     
     @State var searchText = ""
     
+    @State private var packingList: [ListItem] = exampleItems
+    
     var body: some View {
         
         NavigationView{
             
             VStack{
                 
-                List{
-                    ItemView(currentItem: firstItem)
-                    ItemView(currentItem: secondItem)
-                    ItemView(currentItem: thirdItem)
+                List(packingList) {listitem in
+                    Text(listitem.title)
+                    
                 }
                 .searchable(text: $searchText)
                 .navigationTitle("Packing List")

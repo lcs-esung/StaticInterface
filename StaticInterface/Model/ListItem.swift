@@ -19,13 +19,11 @@ let secondItem = ListItem (title: "Socks, (3-5 pairs)", done: true)
  
 let thirdItem = ListItem (title: "Sleepwear, (3-5 pairs)", done: false)
 
+// Example data
 let exampleItems = [
     
-    firstItem
-    ,
-    secondItem
-    ,
-    thirdItem
-    ,
+    firstItem,
+    secondItem,
+    thirdItem,
     
 ]
