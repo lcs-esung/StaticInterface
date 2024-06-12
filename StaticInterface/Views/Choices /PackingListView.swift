@@ -15,14 +15,15 @@ struct PackingListView: View {
     
     @State private var packingList: [ListItem] = exampleItems
     
+    @State var presentingNewItemSheet = true
+    
     var body: some View {
         
         NavigationView{
             
             VStack{
-                
                 List($packingList) { $packingItem in
-                    ItemView(currentItem: packingItem)
+                    ItemView(currentItem: $packingItem)
                         .swipeActions{
                             Button("Delete",
                                    role: .destructive,
@@ -39,19 +40,24 @@ struct PackingListView: View {
             
             .searchable(text: $searchText)
             .navigationTitle("Packing List")
+            .sheet(isPresented: $presentingNewItemSheet) {
+                Text("Hello")
+            }
+            .presentationDetents([.medium, .fraction(0.15)])
+            
             .toolbar{
                 ToolbarItem(placement: .topBarTrailing) {
-                    Button(action: {
-                        createPackItem(withTitle: newItemDescription)
+                    Button(action: { presentingNewItemSheet = true
                     }) {
-                        Image(systemName: "plus")
+                        Text("Edit")
                     }
                 }
                 
                 ToolbarItem(placement: .topBarTrailing) {
                     Button(action: {
+                        createPackItem(withTitle: newItemDescription)
                     }) {
-                        Text("Edit")
+                        Image(systemName: "plus")
                     }
                 }
                 
