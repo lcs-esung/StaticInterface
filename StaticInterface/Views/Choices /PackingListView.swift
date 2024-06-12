@@ -21,7 +21,7 @@ struct PackingListView: View {
             
             VStack{
                 
-                List(packingList) { packingItem in
+                List($packingList) { $packingItem in
                     ItemView(currentItem: packingItem)
                         .swipeActions{
                             Button("Delete",
@@ -31,6 +31,9 @@ struct PackingListView: View {
                             }
                         )
                     }
+                        .onTapGesture {
+                            packingItem.done.toggle()
+                        }
                 }
             }
             
