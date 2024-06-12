@@ -23,6 +23,14 @@ struct PackingListView: View {
                 
                 List(packingList) { packingItem in
                     ItemView(currentItem: packingItem)
+                        .swipeActions{
+                            Button("Delete",
+                                   role: .destructive,
+                                   action: {
+                                        delete(packingItem)
+                            }
+                        )
+                    }
                 }
             }
             
@@ -30,11 +38,20 @@ struct PackingListView: View {
             .navigationTitle("Packing List")
             .toolbar{
                 ToolbarItem(placement: .topBarTrailing) {
-                    Button(action: {}) {
+                    Button(action: {
+                        createPackItem(withTitle: newItemDescription)
+                    }) {
                         Image(systemName: "plus")
+                    }
+                }
+                
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button(action: {
+                    }) {
                         Text("Edit")
                     }
                 }
+                
                 ToolbarItem(placement: .topBarLeading) {
                     Button(action: {}) {
                         Image(systemName: "arrow.left")
@@ -56,6 +73,13 @@ struct PackingListView: View {
         
         packingList.append(packingItem)
         
+    }
+    
+    func delete(_ packingItem: ListItem) {
+        
+        packingList.removeAll { currentItem in
+            currentItem.id == packingItem.id
+        }
     }
 }
 
