@@ -32,9 +32,6 @@ struct PackingListView: View {
                             }
                         )
                     }
-                        .onTapGesture {
-                            packingItem.done.toggle()
-                        }
                 }
             }
             

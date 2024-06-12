@@ -19,6 +19,9 @@ struct ItemView: View {
             }, icon: {
                 Image(systemName: currentItem.done == true ?
                     "checkmark.circle" : "circle")
+                .onTapGesture {
+                    currentItem.done.toggle()
+                }
             }
         )
     }
