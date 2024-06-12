@@ -15,7 +15,6 @@ struct PackingListView: View {
     
     @State private var packingList: [ListItem] = exampleItems
     
-    
     var body: some View {
         
         NavigationView{
@@ -47,6 +46,17 @@ struct PackingListView: View {
             }
         }
     }
+    
+    func createPackItem(withTitle title: String) {
+        
+        let packingItem = ListItem(
+            title: title,
+            done: false
+        )
+        
+        packingList.append(packingItem)
+        
+    }
 }
 
 
@@ -60,3 +70,4 @@ struct PackingListView: View {
 #Preview {
     PackingListView()
 }
+  
