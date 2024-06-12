@@ -9,9 +9,12 @@ import SwiftUI
 
 struct PackingListView: View {
     
+    @State var newItemDescription = ""
+    
     @State var searchText = ""
     
     @State private var packingList: [ListItem] = exampleItems
+    
     
     var body: some View {
         
@@ -19,32 +22,39 @@ struct PackingListView: View {
             
             VStack{
                 
-                List(packingList) {listitem in
-                    Text(listitem.title)
-                    
+                List(packingList) { packingItem in
+                    ItemView(currentItem: packingItem)
                 }
-                .searchable(text: $searchText)
-                .navigationTitle("Packing List")
-                .toolbar{
-                    ToolbarItem(placement: .topBarTrailing) {
-                        Button(action: {}) {
-                            Image(systemName: "plus")
-                            Text("Edit")
             }
-        }
-                    ToolbarItem(placement: .topBarLeading) {
-                        Button(action: {}) {
-                            Image(systemName: "arrow.left")
-                            Text("Back")
-            }
-        }
-        
-        
+            
+            .searchable(text: $searchText)
+            .navigationTitle("Packing List")
+            .toolbar{
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button(action: {}) {
+                        Image(systemName: "plus")
+                        Text("Edit")
+                    }
                 }
+                ToolbarItem(placement: .topBarLeading) {
+                    Button(action: {}) {
+                        Image(systemName: "arrow.left")
+                        Text("Back")
+                    }
+                }
+                
+                
             }
         }
     }
 }
+
+
+
+
+
+
+
 
 
 #Preview {
