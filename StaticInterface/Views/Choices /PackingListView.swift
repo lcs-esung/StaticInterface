@@ -19,20 +19,15 @@ struct PackingListView: View {
         
         NavigationView{
             
-            VStack{
-                List($packingList) { $packingItem in
+            List{
+                ForEach($packingList) { $packingItem in
                     ItemView(currentItem: $packingItem)
-                        .swipeActions{
-                            Button("Delete",
-                                   role: .destructive,
-                                   action: {
-                                        delete(packingItem)
-                            }
-                        )
-                    }
                 }
+                .onDelete(perform: delete)
             }
-            
+            .toolbar{
+                EditButton()
+            }
             .searchable(text: $searchText)
             .navigationTitle("Packing List")
             .toolbar{
@@ -67,12 +62,16 @@ struct PackingListView: View {
         
     }
     
-    func delete(_ packingItem: ListItem) {
-        
-        packingList.removeAll { currentItem in
-            currentItem.id == packingItem.id
-        }
-    }
+//    func delete(_ packingItem: ListItem) {
+//        
+//        packingList.removeAll { currentItem in
+//            currentItem.id == packingItem.id
+//        }
+//    }
+    
+    func delete(at offsets: IndexSet) {
+           packingList.remove(atOffsets: offsets)
+       }
 }
 
 
