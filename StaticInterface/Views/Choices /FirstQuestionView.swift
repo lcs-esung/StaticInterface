@@ -9,33 +9,36 @@ import SwiftUI
 
 struct FirstQuestionView: View {
     
-        let gradientColor = Gradient(colors: [.lightBlue, .lightGrey])
-
-        var body: some View {
-
-            let lightGrey = Color(
-                       hue: 0/360.0,
-                       saturation: 0.0,
-                       brightness: 0.93
-                   )
-
-            let gradient2 = LinearGradient(gradient: gradientColor, startPoint: UnitPoint(x: 1, y: 0.5), endPoint: UnitPoint(x: 1, y: 1))
-
+    let gradientColor = Gradient(colors: [.lightBlue, .lightGrey])
+    
+    var body: some View {
+        
+        let lightGrey = Color(
+            hue: 0/360.0,
+            saturation: 0.0,
+            brightness: 0.93
+        )
+        
+        let gradient2 = LinearGradient(gradient: gradientColor, startPoint: UnitPoint(x: 1, y: 0.5), endPoint: UnitPoint(x: 1, y: 1))
+        
+        NavigationStack{
+            
             ZStack{
+                
                 Rectangle()
                     .foregroundStyle(gradient2)
                     .ignoresSafeArea()
                 
                 VStack{
                     
-    
+                    
                     TitleView()
                         .padding(.bottom, 80)
                     
                     QuestionView(question: "Where are you going from?")
                     
                     TextBoxView(textFieldAnswer: "Enter answer here")
-                      
+                    
                     HStack {
                         
                         Button {
@@ -46,17 +49,20 @@ struct FirstQuestionView: View {
                         .buttonStyle(.bordered)
                         .padding(.trailing, 60)
                         
-                        Button {
-                            ""
-                        } label: {
-                            Text("Done")
+                        NavigationLink {
+                            SecondQuestionView()
                         }
-                        .buttonStyle(.bordered)
+                    label: {
+                        Text("Done")
+                    }
+                    .buttonStyle(.bordered)
+                        
                     }
                 }
             }
         }
     }
+}
 
 #Preview {
     FirstQuestionView()
