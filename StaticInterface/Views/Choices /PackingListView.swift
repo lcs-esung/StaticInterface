@@ -21,14 +21,8 @@ struct PackingListView: View {
         NavigationView{
             
             List{
-                ForEach(
-                    
-                    filter(items: packingList, on: searchText)
-                    
-                
-                ) { packingItem in
-                    Text(packingItem.title)
-                    //ItemView(currentItem: $packingItem)
+                ForEach($packingList) { $packingItem in
+                    ItemView(currentItem: $packingItem)
                 }
                 .onDelete(perform: delete)
             }
