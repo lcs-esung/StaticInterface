@@ -38,11 +38,24 @@ struct DateView: View {
                 QuestionView(question: "Which dates are you going to be travelling? (Start and end)")
                 
                 TextBoxView(textFieldAnswer: "Enter answer here")
-                  
-                Spacer()
-                  
                 
-             
+                HStack {
+                    
+                    Button {
+                        ""
+                    } label: {
+                        Text("Cancel")
+                    }
+                    .buttonStyle(.bordered)
+                    .padding(.trailing, 60)
+                    
+                    Button {
+                        ""
+                    } label: {
+                        Text("Done")
+                    }
+                    .buttonStyle(.bordered)
+                }
             }
         }
     }

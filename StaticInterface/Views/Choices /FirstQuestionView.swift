@@ -28,10 +28,7 @@ struct FirstQuestionView: View {
                 
                 VStack{
                     
-                    BackView()
-                    
-                    Spacer()
-                    
+    
                     TitleView()
                         .padding(.bottom, 80)
                     
@@ -39,10 +36,23 @@ struct FirstQuestionView: View {
                     
                     TextBoxView(textFieldAnswer: "Enter answer here")
                       
-                    Spacer()
-                      
-                    
-                 
+                    HStack {
+                        
+                        Button {
+                            ""
+                        } label: {
+                            Text("Cancel")
+                        }
+                        .buttonStyle(.bordered)
+                        .padding(.trailing, 60)
+                        
+                        Button {
+                            ""
+                        } label: {
+                            Text("Done")
+                        }
+                        .buttonStyle(.bordered)
+                    }
                 }
             }
         }

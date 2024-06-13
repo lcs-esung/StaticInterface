@@ -28,21 +28,30 @@ struct SecondQuestionView: View {
             
             VStack{
                 
-                BackView()
-                
-                Spacer()
-                
                 TitleView()
                     .padding(.bottom, 80)
                 
                 QuestionView(question: "Where are you going to?")
                 
                 TextBoxView(textFieldAnswer: "Enter answer here")
-                  
-                Spacer()
-                  
                 
-             
+                HStack {
+                    
+                    Button {
+                        ""
+                    } label: {
+                        Text("Cancel")
+                    }
+                    .buttonStyle(.bordered)
+                    .padding(.trailing, 60)
+                    
+                    Button {
+                        ""
+                    } label: {
+                        Text("Done")
+                    }
+                    .buttonStyle(.bordered)
+                }
             }
         }
     }
