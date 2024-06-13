@@ -15,8 +15,6 @@ struct PackingListView: View {
     
     @State private var packingList: [ListItem] = exampleItems
     
-    @State var presentingNewItemSheet = true
-    
     var body: some View {
         
         NavigationView{
@@ -37,19 +35,7 @@ struct PackingListView: View {
             
             .searchable(text: $searchText)
             .navigationTitle("Packing List")
-            .sheet(isPresented: $presentingNewItemSheet) {
-                Text("Hello")
-            }
-            .presentationDetents([.medium, .fraction(0.15)])
-            
             .toolbar{
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button(action: { presentingNewItemSheet = true
-                    }) {
-                        Text("Edit")
-                    }
-                }
-                
                 ToolbarItem(placement: .topBarTrailing) {
                     Button(action: {
                         createPackItem(withTitle: newItemDescription)
