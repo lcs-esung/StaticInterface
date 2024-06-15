@@ -49,12 +49,14 @@ struct DaysView: View {
                     .buttonStyle(.bordered)
                     .padding(.trailing, 60)
                     
-                    Button {
-                        ""
-                    } label: {
-                        Text("Done")
+                    NavigationLink {
+                        DateView()
                     }
-                    .buttonStyle(.bordered)
+                label: {
+                    Text("Done")
+                }
+                .buttonStyle(.bordered)
+                    
                 }
             }
         }

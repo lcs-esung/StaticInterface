@@ -49,12 +49,14 @@ struct PurposeView: View {
                     .buttonStyle(.bordered)
                     .padding(.trailing, 60)
                     
-                    Button {
-                        ""
-                    } label: {
-                        Text("Done")
+                    NavigationLink {
+                        DaysView()
                     }
-                    .buttonStyle(.bordered)
+                label: {
+                    Text("Done")
+                }
+                .buttonStyle(.bordered)
+                    
                 }
             }
         }

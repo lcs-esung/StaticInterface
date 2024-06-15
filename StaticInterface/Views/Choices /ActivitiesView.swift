@@ -49,12 +49,14 @@ struct ActivitiesView: View {
                     .buttonStyle(.bordered)
                     .padding(.trailing, 60)
                     
-                    Button {
-                        ""
-                    } label: {
-                        Text("Done")
+                    NavigationLink {
+                        PackingListPreView()
                     }
-                    .buttonStyle(.bordered)
+                label: {
+                    Text("Done")
+                }
+                .buttonStyle(.bordered)
+                    
                 }
             }
         }

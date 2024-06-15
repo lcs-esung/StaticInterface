@@ -37,37 +37,42 @@ struct PackingListPreView: View {
                   
                 QuestionView(question: "Based on your answers..      This is what you should pack!")
                 
-                ZStack{
-                    Rectangle()
-                        .foregroundColor(.slightGrey)
-                        .aspectRatio(contentMode: .fit)
-                        .frame(height: 170)
-                        .cornerRadius(30)
-                        
-                    
-                    VStack {
-                        Text("Packing List")
-                            .font(Font.custom("Arial-BoldMT", size: 23))
-                            .multilineTextAlignment(.center)
-                            
-                            
-                        
-                        Image(systemName: "list.clipboard.fill")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(height: 80)
-                            .foregroundColor(.gray)
-                            .padding(.bottom)
-                         
+                HStack {
+            
+
+                    NavigationLink {
+                        SecondQuestionView()
                     }
-                    
-                   
+                label: {
+                    ZStack{
+                        Rectangle()
+                            .foregroundColor(.slightGrey)
+                            .aspectRatio(contentMode: .fit)
+                            .frame(height: 170)
+                            .cornerRadius(30)
+                            
+                        
+                        VStack {
+                            Text("Packing List")
+                                .font(Font.custom("Arial-BoldMT", size: 23))
+                                .foregroundColor(.black)
+                                .multilineTextAlignment(.center)
+                            
+                            
+                            
+                            Image(systemName: "list.clipboard.fill")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(height: 80)
+                                .foregroundColor(.gray)
+                                .padding(.bottom)
+                            
+                        }
+                    }
                 }
-                
+            }
                 Spacer()
-                  
                 
-             
             }
         }
     }
