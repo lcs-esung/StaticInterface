@@ -28,10 +28,6 @@ struct DateView: View {
             
             VStack{
                 
-                BackView()
-                
-                Spacer()
-                
                 TitleView()
                     .padding(.bottom, 80)
                 

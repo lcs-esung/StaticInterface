@@ -28,10 +28,6 @@ struct PurposeView: View {
             
             VStack{
                 
-                BackView()
-                
-                Spacer()
-                
                 TitleView()
                     .padding(.bottom, 80)
                 
