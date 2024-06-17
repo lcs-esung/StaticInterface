@@ -27,6 +27,7 @@ struct PackingListPreView: View {
                 .ignoresSafeArea()
             
             VStack{
+                Spacer()
                 
                 TitleView()
                     .padding(.bottom, 80)
