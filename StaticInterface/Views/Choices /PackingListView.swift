@@ -40,12 +40,12 @@ struct PackingListView: View {
                     }
                 }
                 
-                ToolbarItem(placement: .topBarLeading) {
-                    Button(action: {}) {
-                        Image(systemName: "arrow.left")
-                        Text("Back")
-                    }
-                }
+//                ToolbarItem(placement: .topBarLeading) {
+//                    Button(action: {}) {
+//                        Image(systemName: "arrow.left")
+//                        Text("Back")
+//                    }
+//                }
                 
                 
             }

@@ -28,10 +28,6 @@ struct PackingListPreView: View {
             
             VStack{
                 
-                BackView()
-                
-                Spacer()
-                
                 TitleView()
                     .padding(.bottom, 80)
                   
@@ -41,7 +37,7 @@ struct PackingListPreView: View {
             
 
                     NavigationLink {
-                        SecondQuestionView()
+                        PackingListView()
                     }
                 label: {
                     ZStack{
